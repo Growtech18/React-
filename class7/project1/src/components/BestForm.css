@@ -1,0 +1,108 @@
+/* Container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.best-form {
+  background: #fff;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 28px;
+}
+
+/* Input groups */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+/* Radio & Checkbox */
+.form-group h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #444;
+}
+
+.form-group label input {
+  margin-right: 8px;
+}
+
+.form-group label {
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Submit button */
+.form-actions {
+  text-align: center;
+}
+
+.form-actions button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form-actions button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.form-actions button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .best-form {
+    padding: 20px;
+  }
+  .form-title {
+    font-size: 22px;
+  }
+}
